@@ -99,8 +99,10 @@ class ListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let cell = UITableViewCell()
         let user = users[indexPath.row]
         
-        if let myName = user.name {
-            cell.textLabel?.text = myName
+        if let name = user.name {
+            if let surname = user.surname{
+                cell.textLabel?.text = name + " " + surname
+            }
         }
         return cell
     }

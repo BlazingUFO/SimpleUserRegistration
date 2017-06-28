@@ -100,7 +100,7 @@ class RegisterVC: UIViewController, CLLocationManagerDelegate, UIImagePickerCont
             userData.surname = surnameTxt.text
             let date = Date()
             let formatter = DateFormatter()
-            formatter.dateFormat = "dd.MM.yyyy-HH:mm:SS"
+            formatter.dateFormat = "dd.MM.yyyy-HH:mm:ss"
             userData.time = formatter.string(from: date)
             userData.id = UIDevice.current.identifierForVendor!.uuidString
             userData.longitude = longitude as NSNumber

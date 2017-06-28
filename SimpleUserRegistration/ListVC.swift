@@ -104,6 +104,7 @@ class ListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         return cell
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
     }

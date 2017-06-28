@@ -45,7 +45,6 @@ class RegisterVC: UIViewController, CLLocationManagerDelegate, UIImagePickerCont
         
         self.locationManager.requestAlwaysAuthorization()
         
-        // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
         
         if CLLocationManager.locationServicesEnabled() {
@@ -68,7 +67,6 @@ class RegisterVC: UIViewController, CLLocationManagerDelegate, UIImagePickerCont
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func registerClicked (_ sender:UIButton){
@@ -127,7 +125,6 @@ class RegisterVC: UIViewController, CLLocationManagerDelegate, UIImagePickerCont
             datePckr.setDate(Date(), animated: false)
             
             (UIApplication.shared.delegate as! AppDelegate).saveContext()
-            //uiimage set to default
             
             let alertController = UIAlertController(title:
                 "Success", message:
@@ -205,7 +202,6 @@ class RegisterVC: UIViewController, CLLocationManagerDelegate, UIImagePickerCont
     
     
     func createToolBarWithTag(_ tag: Int) -> UIToolbar{
-        // Toolbar for pciekr
         let toolBar = UIToolbar()
         toolBar.isTranslucent = true
         toolBar.sizeToFit()
@@ -231,7 +227,6 @@ class RegisterVC: UIViewController, CLLocationManagerDelegate, UIImagePickerCont
         
     }
     
-    // Done button on tool bar
     func doneToolBarButton(_ sender: UIBarButtonItem){
         let formatter = DateFormatter()
         formatter.dateFormat = "dd.MM.yyyy"

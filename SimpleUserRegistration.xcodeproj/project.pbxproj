@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D085D86A1F0406FE0082F1FC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D085D8691F0406FE0082F1FC /* MapKit.framework */; };
+		D085D86D1F040BC00082F1FC /* UserData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D085D86B1F040BC00082F1FC /* UserData+CoreDataClass.swift */; };
+		D085D86E1F040BC00082F1FC /* UserData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D085D86C1F040BC00082F1FC /* UserData+CoreDataProperties.swift */; };
 		D0A142EA1F039D7500208D57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A142E91F039D7500208D57 /* AppDelegate.swift */; };
-		D0A142EC1F039D7500208D57 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A142EB1F039D7500208D57 /* FirstViewController.swift */; };
-		D0A142EE1F039D7500208D57 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A142ED1F039D7500208D57 /* SecondViewController.swift */; };
+		D0A142EC1F039D7500208D57 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A142EB1F039D7500208D57 /* RegisterVC.swift */; };
+		D0A142EE1F039D7500208D57 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A142ED1F039D7500208D57 /* ListVC.swift */; };
 		D0A142F11F039D7500208D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A142EF1F039D7500208D57 /* Main.storyboard */; };
 		D0A142F31F039D7500208D57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A142F21F039D7500208D57 /* Assets.xcassets */; };
 		D0A142F61F039D7500208D57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A142F41F039D7500208D57 /* LaunchScreen.storyboard */; };
+		D0A142FF1F03A45900208D57 /* SimpleUserResgitration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0A142FD1F03A45900208D57 /* SimpleUserResgitration.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D085D8691F0406FE0082F1FC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D085D86B1F040BC00082F1FC /* UserData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataClass.swift"; path = "../UserData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D085D86C1F040BC00082F1FC /* UserData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserData+CoreDataProperties.swift"; path = "../UserData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D0A142E61F039D7500208D57 /* SimpleUserRegistration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleUserRegistration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A142E91F039D7500208D57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0A142EB1F039D7500208D57 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		D0A142ED1F039D7500208D57 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D0A142EB1F039D7500208D57 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		D0A142ED1F039D7500208D57 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		D0A142F01F039D7500208D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0A142F21F039D7500208D57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0A142F51F039D7500208D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0A142F71F039D7500208D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0A142FE1F03A45900208D57 /* SimpleUserResgitration.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleUserResgitration.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D085D86A1F0406FE0082F1FC /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D085D8681F0406FE0082F1FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D085D8691F0406FE0082F1FC /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D085D86F1F0410C20082F1FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0A142EB1F039D7500208D57 /* RegisterVC.swift */,
+				D0A142ED1F039D7500208D57 /* ListVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D085D8701F0410CF0082F1FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D085D86B1F040BC00082F1FC /* UserData+CoreDataClass.swift */,
+				D085D86C1F040BC00082F1FC /* UserData+CoreDataProperties.swift */,
+				D0A142FD1F03A45900208D57 /* SimpleUserResgitration.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		D0A142DD1F039D7500208D57 = {
 			isa = PBXGroup;
 			children = (
 				D0A142E81F039D7500208D57 /* SimpleUserRegistration */,
 				D0A142E71F039D7500208D57 /* Products */,
+				D085D8681F0406FE0082F1FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +93,9 @@
 		D0A142E81F039D7500208D57 /* SimpleUserRegistration */ = {
 			isa = PBXGroup;
 			children = (
+				D085D86F1F0410C20082F1FC /* Controllers */,
+				D085D8701F0410CF0082F1FC /* Models */,
 				D0A142E91F039D7500208D57 /* AppDelegate.swift */,
-				D0A142EB1F039D7500208D57 /* FirstViewController.swift */,
-				D0A142ED1F039D7500208D57 /* SecondViewController.swift */,
 				D0A142EF1F039D7500208D57 /* Main.storyboard */,
 				D0A142F21F039D7500208D57 /* Assets.xcassets */,
 				D0A142F41F039D7500208D57 /* LaunchScreen.storyboard */,
@@ -101,6 +138,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = AUN275W784;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -140,9 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0A142EE1F039D7500208D57 /* SecondViewController.swift in Sources */,
+				D085D86E1F040BC00082F1FC /* UserData+CoreDataProperties.swift in Sources */,
+				D085D86D1F040BC00082F1FC /* UserData+CoreDataClass.swift in Sources */,
+				D0A142EE1F039D7500208D57 /* ListVC.swift in Sources */,
 				D0A142EA1F039D7500208D57 /* AppDelegate.swift in Sources */,
-				D0A142EC1F039D7500208D57 /* FirstViewController.swift in Sources */,
+				D0A142EC1F039D7500208D57 /* RegisterVC.swift in Sources */,
+				D0A142FF1F03A45900208D57 /* SimpleUserResgitration.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +351,22 @@
 				D0A142FC1F039D7500208D57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D0A142FD1F03A45900208D57 /* SimpleUserResgitration.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D0A142FE1F03A45900208D57 /* SimpleUserResgitration.xcdatamodel */,
+			);
+			currentVersion = D0A142FE1F03A45900208D57 /* SimpleUserResgitration.xcdatamodel */;
+			path = SimpleUserResgitration.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D0A142DE1F039D7500208D57 /* Project object */;
 }
